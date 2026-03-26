@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(233, 233, 233);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+
+/*#region ENCABEZADO HEADER  */
+.encabezadoHeader {
+    margin-top: 1rem;
+
+    background-color: yellow;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.encabezadoHeader img {
+    width: 20%;
+}
+.encabezadoHeader h1 {
+    /* font-size: 100%; */
+    font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+    .encabezadoHeader {
+        background-color: aquamarine;
+    }
+    .encabezadoHeader img {
+        width: 15%;
+    }
+    .encabezadoHeader h1 {
+        font-size: 250%;
+    }
+}
+
+/* ESCRITORIO */
+@media (min-width: 1040px) {
+    .encabezadoHeader {
+        background-color: red;
+        height: 11rem;
+    }
+    .encabezadoHeader img {
+        position: absolute;
+        left: 10%;
+        transform: translateX(-10%);
+
+        width: clamp(0px, 12%, 10rem);
+    }
+    .encabezadoHeader h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/*#endregion  */
+
+/*#region SECCION PRINCIPAL  */
+
+.contenedorPrincipal {
+    background-color: rgb(68, 62, 90);
+    /* padding-left: 10rem;
+    padding-right: 0.5rem; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.asideDerecho {
+    background-color: #1d1f33;
+    color: #f4f4f4;
+    padding: 1rem;
+    /* min-height: 10rem; */
+}
+
+.asideDerecho img{
+    width: 80%;
+}
+
+@media (min-width: 1040px) {
+    .layout {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .contenedorPrincipal {
+        flex: 3;
+    }
+    .asideDerecho {
+        flex: 1;
+        /* min-height: auto; */
+    }
+}
+
+.contenedorBasicoInformacion {
+    background-color: cadetblue;
+    
+}
+.biografia{
+    padding: 0.75rem;
+}
+.contenedorDoble{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.contenedorDoble > div{
+    background-color: rgb(136, 0, 0);
+    flex: 1;
+
+    padding: 1rem;
+}
+
+.galeria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+
+    width: 90%;
+}
+.galeria img{
+    border: 2px solid black;
+    box-shadow: 3px 4px 2px;
+    border-radius: 5px;
+
+    width: 80%;
+}
+.contenedorGaleria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+
+
+/* TABLET */
+@media (min-width: 768px) {
+    .contenedorPrincipal {
+        padding: 1rem;
+    }
+    .galeria{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .galeria img{
+        width: 40%;
+    }
+}
+
+/* ESCRITORIO */
+@media (min-width: 1040px) {
+    .contenedorPrincipal {
+        padding: 2rem;
+    }
+        .galeria img{
+        width: 30%;
+    }
+}
+
+/*#endregion  */
+
+@media (min-width: 768px) {
+}
+
+/* ESCRITORIO */
+@media (min-width: 1040px) {
+}

@@ -6,12 +6,24 @@
         <title>Diego Alonso Feijoo</title>
 
         <link rel="stylesheet" href="styles.css" />
+        <link rel="script" href="" />
     </head>
     <body>
         <header>
             <div class="encabezadoHeader">
-                <img src="https://picsum.photos/id/548/200/200" alt="" />
-                <h1>Diego Alonso Feijoo</h1>
+                <div class="contenedorLogoEncabezado">
+                    <img src="https://picsum.photos/id/548/200/200" alt="" />
+                </div>
+                <div class="contenedorTituloPrincipalEncabezado">
+                    <h1>Diego Alonso Feijoo</h1>
+                </div>
+                <div class="contenedorMenuEncabezado">
+                    <ul class="menu">
+                        <li>Habilidades</li>
+                        <li>Redes Sociales</li>
+                        <li>Galeria de proyectos</li>
+                    </ul>
+                </div>
             </div>
         </header>
 
@@ -20,14 +32,19 @@
                 <div class="biografia contenedorBasicoInformacion">
                     <h2>Biografia</h2>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Corporis in libero ea temporibus id quaerat deleniti quidem
-                        quis iusto delectus, maiores esse pariatur? Sapiente, unde
-                        rem odio optio eaque eos.
-
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, labore, ad facere repellat, reprehenderit obcaecati recusandae et rerum expedita molestiae deserunt! Aperiam autem mollitia ipsum commodi! Ea error saepe non!
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam animi saepe aut deleniti? Error delectus expedita beatae ipsa eaque, ullam itaque id aperiam consectetur, modi adipisci perspiciatis repellendus enim hic.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Corporis in libero ea temporibus id quaerat
+                        deleniti quidem quis iusto delectus, maiores esse
+                        pariatur? Sapiente, unde rem odio optio eaque eos. Lorem
+                        ipsum dolor, sit amet consectetur adipisicing elit.
+                        Ullam, labore, ad facere repellat, reprehenderit
+                        obcaecati recusandae et rerum expedita molestiae
+                        deserunt! Aperiam autem mollitia ipsum commodi! Ea error
+                        saepe non! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quisquam animi saepe aut deleniti?
+                        Error delectus expedita beatae ipsa eaque, ullam itaque
+                        id aperiam consectetur, modi adipisci perspiciatis
+                        repellendus enim hic.
                     </p>
                 </div>
                 <div class="contenedorDoble contenedorBasicoInformacion">
@@ -48,14 +65,62 @@
                 <div class="contenedorGaleria contenedorBasicoInformacion">
                     <h1>Galeria de proyectos</h1>
                     <div class="galeria">
-                        <img src="https://picsum.photos/300/200?random=8" alt="" />
-                        <img src="https://picsum.photos/300/200?random=7" alt="" />
-                        <img src="https://picsum.photos/300/200?random=6" alt="" />
-                        <img src="https://picsum.photos/300/200?random=5" alt="" />
-                        <img src="https://picsum.photos/300/200?random=4" alt="" />
-                        <img src="https://picsum.photos/300/200?random=3" alt="" />
-                        <img src="https://picsum.photos/300/200?random=2" alt="" />
-                        <img src="https://picsum.photos/300/200?random=1" alt="" />
+                        <img
+                            src="https://picsum.photos/300/200?random=8"
+                            alt=""
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=7"
+                            alt=""
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=6"
+                            alt=""
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=5"
+                            alt=""
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=4"
+                            alt=""
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=3"
+                            alt=""
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=2"
+                            alt=""
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=1"
+                            alt=""
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=1"
+                            alt=""
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=1"
+                            alt=""
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=1"
+                            alt=""
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=1"
+                            alt=""
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=1"
+                            alt=""
+                        />
+                        <img
+                            src="https://picsum.photos/300/200?random=1"
+                            alt=""
+                        />
                     </div>
                 </div>
             </main>
@@ -70,5 +135,18 @@
             <h3>Copy Copy</h3>
             <h3>Sisi</h3>
         </footer>
+
+        <script>
+            window.addEventListener("scroll", function () {
+                const header = document.querySelector(".encabezadoHeader");
+
+                // Si bajas más de 50px del tope de la página
+                if (window.scrollY > 50) {
+                    header.classList.add("shrink");
+                } else {
+                    header.classList.remove("shrink");
+                }
+            });
+        </script>
     </body>
 </html>
